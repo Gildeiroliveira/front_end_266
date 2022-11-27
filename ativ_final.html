@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    aside {
+      width: 10%;
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-bottom: 20%;
+      margin-top: 25px;
+      margin-right: 60px;
+      float: right;
+      background-color: #7e8081;
+      
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    .fakeimg {
+    height: 200px;
+    }
+  </style>
+  <title>atividade final Front_end</title>
+</head>
+
+<body  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" >
+  <!--Cabeçario-->
+  <header class="row" id="#">
+    <div class="container-fluid p-5  bg-dark text-white">
+      <h1>My First Bootstrap Page</h1>
+      <p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+    </div>
+    <div>
+      <nav class="navbar nav-tabs navbar-expand-sm navbar-dark bg-secondary p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" action="http://www.google.com/search" methord="get">
+              <input class="form-control me-2" type="search" placeholder="Search" name="q" id="all">
+              <button class="btn btn-primary" type="submit" name="q" id="all" value="all">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--conteudo-->
+  <aside>
+    <ul>
+      <li><a href="https://www.w3schools.com/default.asp">W3shhool</a></li>
+      <li><a href="https://www.youtube.com/">Youtube</a></li>
+      <li><a href="https://www.twitch.tv/">Twitch.Tv</a></li>
+      <li><a href="https://www.americanas.com.br/">Americanas</a></li>
+      <li><a href="https://www.amazon.com.br/">Amazon</a></li>
+      <li><a href="https://www3.pobre.wtf/">Pobre.Tv</a></li>
+      <li><a href="https://www.programiz.com/python-programming/online-compiler/">Python_online</a></li>
+    </ul>
+  </aside>
+  <div class="container my-4">
+    <div class="row">
+      <div>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <!--Carrocel-->
+        <div id="demo" class="carousel slide " data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.ytimg.com/vi/R9IZKxEWHBE/maxresdefault.jpg" alt="Los Angeles" class="d-block"
+                style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.automaistv.com.br/wp-content/uploads/2021/06/Hennessey-Mammoth-1000-TRX-8_edited.jpg"
+                alt="Chicago" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.autonocion.com/wp-content/uploads/2020/09/Hennessey-Mammoth-1000-TRX-6x6-14.jpg"
+                alt="New York" class="d-block" style="width:100%">
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <!--class col-sm-->
+          
+          
+        </div>
+        <div class="row my-4">
+          <div class="col-sm-4">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg"><img src="https://pm1.narvii.com/7227/269356d97bb4ce01e6229ff07d70814d60cb8ef6r1-299-168v2_hq.jpg" alt="anime" class="fakeimg col-sm-11"></div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3 class="mt-4">Some Links</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <ul class="nav nav-pills flex-column me-auto">
+              <li class="nav-item">
+                <a class="nav-link active " href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-8">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2020</h5>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49EkauFpNWGfdL8wofTh9264NcZHLHg4I8mcWtKK1KbjD4ylqvVjc_Np89zlpUFUfig&usqp=CAU" alt="anime" class="fakeimg"></div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      
+            <h2 class="mt-5">TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2020</h5>
+            <div><img src="https://www.pixelstalk.net/wp-content/uploads/images6/Dark-Anime-Wallpaper-4K-Desktop.jpg" alt="anime" class="fakeimg col-sm-9"></div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--scroliyyss-->
+    <div>
+      
+      <nav class="body navbar navbar-expand-sm bg-dark navbar-dark fixed ">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Section 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Section 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Section 3</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      
+      <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+        <h1>Section 1</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      </div>
+      
+      <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+        <h1>Section 2</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      </div>
+      
+      <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      </div>
+    </div>
+    <!--form action-->
+    <div class="row my-4">
+    <form action="/action_page.php">
+      <label for="sel1" class="form-label">Select list (select one):</label>
+      <select class="form-select" id="sel1" name="sellist1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+      <br>
+      
+      <label for="sel2" class="form-label">Mutiple select list (hold shift to select more than one):</label>
+      <select multiple class="form-select" id="sel2" name="sellist2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+      </select>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+    </div>
+  </div>
+  
+  
+  <!--rodape-->
+  <footer id="footer">
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+      <p>Footer</p>
+      <a href="#">&copy;</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
